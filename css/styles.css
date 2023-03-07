@@ -434,7 +434,7 @@ h4 {
 .form-button:focus {
   box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.2);
 }
-.svg-send {
+.footer-input-icon {
   fill: var(--colorWhite);
   position: absolute;
   left: 148px;
@@ -442,7 +442,6 @@ h4 {
   bottom: 13px;
   right: 28px;
 }
-
 .portfolio-button {
   background-color: var(--portfolioButton);
   border-radius: 4px;
