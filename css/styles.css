@@ -311,6 +311,7 @@ h4 {
   background-color: var(--selectionColor);
   fill: var(--colorWhite);
   border-radius: 50%;
+  outline: none;
 }
 .clients-list {
   list-style: none;
