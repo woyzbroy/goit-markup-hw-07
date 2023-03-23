@@ -628,7 +628,7 @@ h4 {
   border-radius: 4px;
   transform: translate(-50%, -50%);
 }
-.close-btn {
+.modal__close-btn {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -642,12 +642,12 @@ h4 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-btn:hover,
-.close-btn:focus {
+.modal__close-btn:hover,
+.modal__close-btn:focus {
   color: var(--colorWhite);
   background-color: var(--selectionColor);
 }
-.modal-heading {
+.modal__heading {
   margin-bottom: 12px;
   text-align: center;
   font-weight: 700;
@@ -656,12 +656,12 @@ h4 {
   letter-spacing: 0.03em;
   color: var(--socialsColor);
 }
-.modal-label {
+.modal__label {
   display: block;
   position: relative;
   margin-bottom: 10px;
 }
-.modal-input-heading {
+.modal__input-heading {
   display: block;
   text-transform: capitalize;
   font-size: 12px;
@@ -669,7 +669,7 @@ h4 {
   letter-spacing: 0.01em;
   color: var(--fontColorSecondary);
 }
-.modal-input {
+.modal__input {
   display: block;
   margin-top: 4px;
   padding: 0;
@@ -680,27 +680,25 @@ h4 {
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:hover,
-.modal-input:focus {
+.modal__input:hover,
+.modal__input:focus {
   border-color: var(--selectionColor);
   outline: none;
 }
-.modal-input:focus ~ .modal-input-icon,
-.modal-input:hover ~ .modal-input-icon {
+.modal__input:focus ~ .modal__input-icon,
+.modal__input:hover ~ .modal__input-icon {
   fill: var(--selectionColor);
 }
-.modal-input-icon {
+.modal__input-icon {
   position: absolute;
   left: 12px;
   bottom: 11px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-label-feedback {
-  display: block;
-  position: relative;
+.modal__label--margin-bottom {
   margin-bottom: 20px;
 }
-.modal-textarea {
+.modal__textarea {
   display: block;
   resize: none;
   margin-top: 4px;
@@ -711,45 +709,45 @@ h4 {
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-textarea::placeholder {
+.modal__textarea::placeholder {
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.modal-textarea:hover,
-.modal-textarea:focus {
+.modal__textarea:hover,
+.modal__textarea:focus {
   border-color: var(--selectionColor);
   outline: none;
 }
-.modal-label-checkbox {
+.modal__label-checkbox {
   display: inline-flex;
   align-items: center;
   position: relative;
   margin-bottom: 30px;
   margin-left: 15px;
 }
-.modal-checkbox-input {
+.modal__checkbox-input {
   position: absolute;
   opacity: 0;
   height: 15px;
   width: 16px;
   border-radius: 2px;
 }
-.modal-checkbox-icon {
+.modal__checkbox-icon {
   position: absolute;
   cursor: pointer;
 }
-.modal-checkbox-icon-on {
+.modal__checkbox-icon-on {
   position: absolute;
   visibility: hidden;
   border-radius: 2px;
   cursor: pointer;
 }
-.modal-checkbox-input:checked ~ .modal-checkbox-icon-on {
+.modal__checkbox-input:checked ~ .modal__checkbox-icon-on {
   visibility: visible;
 }
-.modal-checkbox-text {
+.modal__checkbox-text {
   display: block;
   margin-left: 24px;
   font-size: 14px;
@@ -757,10 +755,10 @@ h4 {
   letter-spacing: 0.03em;
   color: var(--fontColorSecondary);
 }
-.modal-checkbox-text a {
+.modal__checkbox-text a {
   color: var(--selectionColor);
 }
-.modal-button {
+.modal__btn {
   display: block;
   margin: 0 auto;
   text-transform: capitalize;
@@ -778,8 +776,8 @@ h4 {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button:hover,
-.modal-button:focus {
+.modal__btn:hover,
+.modal__btn:focus {
   color: var(--fontColorMain);
   background-color: var(--portfolioButton);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
