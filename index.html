@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -17,31 +17,31 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <a class="web-studio" href="./index.html"
-          ><span class="blue-text">Web</span><span class="black-text">Studio</span>
+      <div class="container header__container">
+        <a class="header__link-logo" href="./index.html"
+          ><span class="header__logo-blue">Web</span><span class="header__logo-black">Studio</span>
         </a>
-        <nav>
-          <ul class="social-links">
-            <li>
-              <a class="link current-link" href="./index.html">Agencja</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--current" href="./index.html">Agencja</a>
             </li>
-            <li><a class="link" href="./portfolio.html">Portfolio</a></li>
-            <li><a class="link" href="./contacts.html">Kontakty</a></li>
+            <li class="nav__item"><a class="nav__link" href="./portfolio.html">Portfolio</a></li>
+            <li class="nav__item"><a class="nav__link" href="./contacts.html">Kontakty</a></li>
           </ul>
         </nav>
-        <ul class="contact-list">
-          <li>
-            <a class="contact-link" href="mailto:info@devstudio.com"
-              ><svg class="contact-icon" width="16" height="12">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="mailto:info@devstudio.com"
+              ><svg class="header__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li>
-            <a class="contact-link" href="tel:+48111111111"
-              ><svg class="contact-icon" width="10" height="16">
+          <li class="header__item">
+            <a class="header__link" href="tel:+48111111111"
+              ><svg class="header__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -52,13 +52,13 @@
     </header>
 
     <main>
-      <section class="hero-section">
+      <section class="hero">
         <div class="container">
-          <h1 class="main-heading">efektywne rozwiązania<br />dla waszego biznesu</h1>
-          <button data-modal-open class="main-button" type="button">Zamów usługę</button>
+          <h1 class="hero__heading">efektywne rozwiązania<br />dla waszego biznesu</h1>
+          <button data-modal-open class="hero__btn" type="button">Zamów usługę</button>
         </div>
       </section>
-      <section class="section">
+      <section class="features">
         <div class="container">
           <div>
             <ul class="icon-top">
