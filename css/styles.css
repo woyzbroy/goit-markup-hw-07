@@ -597,7 +597,9 @@ h4 {
   letter-spacing: 0.03em;
   color: var(--fontColorSecondary);
 }
-
+.footer__address-link--underline {
+  text-decoration: underline;
+}
 .backdrop {
   position: fixed;
   left: 0px;
