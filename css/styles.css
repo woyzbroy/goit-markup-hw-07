@@ -197,7 +197,7 @@ h4 {
   flex-direction: row;
   gap: 30px;
 }
-.paragraph-heading {
+.features__title {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -207,7 +207,7 @@ h4 {
   color: var(--socialsColor);
   margin: 0 0 10px 0;
 }
-.paragraph-text {
+.features__text {
   display: block;
   font-weight: 400;
   font-size: 14px;
@@ -217,7 +217,13 @@ h4 {
   margin: 0;
 }
 
-.secondary-heading {
+.work {
+  padding: 94px 0;
+}
+.work--padding {
+  padding-top: 0;
+}
+.work-heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
@@ -225,10 +231,6 @@ h4 {
   letter-spacing: 0.03em;
   color: var(--socialsColor);
   margin: 0 0 50px 0;
-}
-
-.no-padding-top {
-  padding-top: 0;
 }
 
 .grey-background {
