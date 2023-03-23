@@ -738,13 +738,11 @@ h4 {
   position: absolute;
   cursor: pointer;
 }
-.modal__checkbox-icon-on {
-  position: absolute;
+.modal__checkbox-icon--on {
   visibility: hidden;
   border-radius: 2px;
-  cursor: pointer;
 }
-.modal__checkbox-input:checked ~ .modal__checkbox-icon-on {
+.modal__checkbox-input:checked ~ .modal__checkbox-icon--on {
   visibility: visible;
 }
 .modal__checkbox-text {
