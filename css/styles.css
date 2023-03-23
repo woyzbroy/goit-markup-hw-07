@@ -223,7 +223,7 @@ h4 {
 .work--padding {
   padding-top: 0;
 }
-.work-heading {
+.work__heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
@@ -236,7 +236,7 @@ h4 {
 .grey-background {
   background-color: var(--portfolioButton);
 }
-.secondary-heading-list {
+.work__list {
   display: flex;
   list-style: none;
   gap: 30px;
