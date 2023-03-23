@@ -502,7 +502,16 @@ h4 {
 .header--border {
   border-bottom: 1px solid var(--backgroundBorderBottom);
 }
-.portfolio-button {
+.portfolio {
+  padding: 94px 0;
+}
+.portfolio__btn-box {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+.portfolio__btn {
   background-color: var(--portfolioButton);
   border-radius: 4px;
   border-style: none;
@@ -518,64 +527,37 @@ h4 {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-button:hover,
-.portfolio-button:focus {
+.portfolio__btn:hover,
+.portfolio__btn:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--selectionColor);
   color: var(--colorWhite);
 }
-.image-caption {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--socialsColor);
-  margin-bottom: 4px;
-}
-.image-paragraph {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--fontColorSecondary);
-}
-.portfolio-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
-}
-.products-box {
+.portfolio__list {
   list-style: none;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
 }
-.product-card {
+.portfolio__item {
   background: var(--colorWhite);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.product-card:hover,
-.product-card:focus {
+.portfolio__item:hover,
+.portfolio__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.product-card-link {
+.portfolio__link {
   text-decoration: none;
 }
-.cards-border {
-  padding: 20px 24px;
-  border-left: 1px solid var(--backgroundProductCard);
-  border-right: 1px solid var(--backgroundProductCard);
-  border-bottom: 1px solid var(--backgroundProductCard);
-}
-.portfolio-hidden {
+.portfolio__hidden {
   position: relative;
   overflow: hidden;
 }
-.paragraph-overlay {
+.portfolio__text-overlay {
   position: absolute;
   top: 0;
   width: 100%;
@@ -590,9 +572,30 @@ h4 {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.product-card-link:hover .paragraph-overlay,
-.product-card-link:focus .paragraph-overlay {
+.portfolio__link:hover .portfolio__text-overlay,
+.portfolio__link:focus .portfolio__text-overlay {
   transform: translatey(0);
+}
+.portfolio__description-box {
+  padding: 20px 24px;
+  border-left: 1px solid var(--backgroundProductCard);
+  border-right: 1px solid var(--backgroundProductCard);
+  border-bottom: 1px solid var(--backgroundProductCard);
+}
+.portfolio__heaeding {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--socialsColor);
+  margin-bottom: 4px;
+}
+.portfolio__paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--fontColorSecondary);
 }
 
 .backdrop {
