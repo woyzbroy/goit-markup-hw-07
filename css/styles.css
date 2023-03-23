@@ -303,14 +303,14 @@ h4 {
   color: var(--fontColorSecondary);
   margin: 0 0 16px 0;
 }
-.icon-social-list {
+.icon__list {
   list-style: none;
   display: flex;
   gap: 10px;
   justify-content: center;
   margin-bottom: 30px;
 }
-.icon-social-link {
+.icon__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -321,8 +321,8 @@ h4 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-social-link:hover,
-.icon-social-link:focus {
+.icon__link:hover,
+.icon__link:focus {
   background-color: var(--selectionColor);
   fill: var(--colorWhite);
   border-radius: 50%;
