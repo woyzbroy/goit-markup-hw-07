@@ -35,15 +35,10 @@ h4 {
   padding-left: 10px;
   padding-right: 10px;
 }
-
-.portfolio-border {
-  border-bottom: 1px solid var(--backgroundBorderBottom);
-}
 .header__container {
   display: flex;
   align-items: center;
 }
-
 .header__link-logo {
   display: block;
   font-family: 'Raleway';
@@ -504,7 +499,9 @@ h4 {
   bottom: 13px;
   right: 28px;
 }
-
+.header--border {
+  border-bottom: 1px solid var(--backgroundBorderBottom);
+}
 .portfolio-button {
   background-color: var(--portfolioButton);
   border-radius: 4px;
