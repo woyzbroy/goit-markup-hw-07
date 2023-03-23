@@ -220,7 +220,7 @@ h4 {
 .work {
   padding: 94px 0;
 }
-.work--padding {
+.work--no-padding {
   padding-top: 0;
 }
 .work__heading {
@@ -232,17 +232,13 @@ h4 {
   color: var(--socialsColor);
   margin: 0 0 50px 0;
 }
-
-.grey-background {
-  background-color: var(--portfolioButton);
-}
 .work__list {
   display: flex;
   list-style: none;
   gap: 30px;
   justify-content: center;
 }
-.secondary-heading-title {
+.work__title {
   position: relative;
   display: flex;
   justify-content: center;
@@ -257,19 +253,33 @@ h4 {
   color: var(--colorWhite);
   background-color: rgba(47, 48, 58, 0.8);
 }
-.secondary-heading-link {
+.work__link {
   display: block;
   height: 294px;
   text-decoration: none;
 }
-
-.third-heading-list {
+.team {
+  padding: 94px 0;
+}
+.team--grey-background {
+  background-color: var(--portfolioButton);
+}
+.team__heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--socialsColor);
+  margin: 0 0 50px 0;
+}
+.team__list {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-.our-team-card {
+.team__item {
   background-color: var(--colorWhite);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -277,7 +287,7 @@ h4 {
   text-align: center;
 }
 
-.worker-name {
+.team__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -285,7 +295,7 @@ h4 {
   color: var(--socialsColor);
   margin: 30px 0 10px 0;
 }
-.job-name {
+.team__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
