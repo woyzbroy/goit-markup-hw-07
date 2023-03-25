@@ -53,7 +53,7 @@ $transition-delay: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 // Mixin
 
-@mixin border-thin($borderColor) {
+@mixin item-border($borderColor) {
   border-width: 1px;
   border-style: solid;
   border-color: $borderColor;
