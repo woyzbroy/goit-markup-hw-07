@@ -13,7 +13,7 @@ $backgroundBorderBottom: #ececec;
 $backgroundProductCard: #eeeeee;
 $socialIcon: #afb1b8;
 
-// TextFormat
+// Text/Item Format
 
 $logo-font: 'Raleway', sans-serif;
 $main-font: 'Roboto', sans-serif;
@@ -24,6 +24,7 @@ $font-default: 14px;
 $font-m: 16px;
 $font-xl: 36px;
 $font-l: 26px;
+$itemBorderRadius: 4px;
 
 // Container
 
@@ -38,6 +39,8 @@ $small: 20px;
 $medium: 30px;
 $large: 50px;
 $flex-gap: 30px;
+$nav-gap: 46px;
+$header-padding: 32px 0;
 $margin-center: 0 auto;
 
 // Transition

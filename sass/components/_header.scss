@@ -12,23 +12,21 @@
 .header__logo-black {
   color: $fontColorMain;
 }
-// tu skończyłem !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .nav__list {
+  gap: $nav-gap;
   display: flex;
-  gap: 46px;
   list-style: none;
-}
-.nav__list .nav__link {
-  display: block;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--socialsColor);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .nav__link {
+    display: block;
+    font-size: $font-default;
+    font-weight: $font-thick;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $socialsColor;
+    padding: $header-padding;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .nav__list .nav__link:hover,
 .nav__list .nav__link:focus {
