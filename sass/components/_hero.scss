@@ -32,5 +32,5 @@
 .hero__btn:focus {
   color: $fontColorMain;
   background-color: $portfolioButton;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: $default-box-shadow;
 }
