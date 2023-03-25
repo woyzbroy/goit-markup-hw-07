@@ -63,10 +63,9 @@
     text-decoration: none;
     color: $fontColorSecondary;
     fill: $fontColorSecondary;
-    margin: 32px 0;
     transition: color $transition-delay, fill $transition-delay;
   }
 }
 .header__icon {
-  margin-right: 10px;
+  margin-right: $xsmall;
 }
