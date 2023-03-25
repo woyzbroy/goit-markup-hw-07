@@ -55,7 +55,6 @@ h4 {
 .header__logo-black {
   color: var(--fontColorMain);
 }
-
 .nav__list {
   display: flex;
   gap: 46px;
