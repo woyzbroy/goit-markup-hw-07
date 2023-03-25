@@ -27,10 +27,10 @@
   background-color: $selectionColor;
   transition: color $transition-delay, background-color $transition-delay,
     box-shadow $transition-delay;
-}
-.hero__btn:hover,
-.hero__btn:focus {
-  color: $fontColorMain;
-  background-color: $portfolioButton;
-  box-shadow: $default-box-shadow;
+  &:hover,
+  &:focus {
+    color: $fontColorMain;
+    background-color: $portfolioButton;
+    box-shadow: $default-box-shadow;
+  }
 }

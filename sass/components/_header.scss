@@ -26,34 +26,30 @@
     color: $socialsColor;
     padding: $header-padding;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .nav__link:hover,
-  .nav__link:focus {
-    color: $selectionColor;
+    &:hover,
+    &:focus {
+      color: $selectionColor;
+    }
   }
   .nav__link--current {
     color: $selectionColor;
   }
-  .nav__link--current::after {
-    content: '';
-    display: block;
-    position: relative;
-    top: 32px;
-    height: 4px;
-    background: $selectionColor;
-    border-radius: 2px;
-  }
 }
+.nav__link--current::after {
+  content: '';
+  display: block;
+  position: relative;
+  top: 32px;
+  height: 4px;
+  background: $selectionColor;
+  border-radius: 2px;
+}
+
 .header__list {
   @include flex-center;
   gap: $flex-gap;
   margin-left: auto;
   list-style: none;
-  .header__link:hover,
-  .header__link:focus {
-    color: $selectionColor;
-    fill: $selectionColor;
-  }
   .header__link {
     @include flex-center;
     font-size: $font-default;
@@ -64,6 +60,11 @@
     color: $fontColorSecondary;
     fill: $fontColorSecondary;
     transition: color $transition-delay, fill $transition-delay;
+    &:hover,
+    &:focus {
+      color: $selectionColor;
+      fill: $selectionColor;
+    }
   }
 }
 .header__icon {

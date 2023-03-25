@@ -1,0 +1,61 @@
+.team {
+  padding: $section-padding;
+}
+.team--grey-background {
+  background-color: $portfolioButton;
+}
+.team__heading {
+  @include section-heading;
+}
+.team__list {
+  @include flex-center;
+  list-style: none;
+  justify-content: center;
+  gap: $flex-gap;
+}
+.team__item {
+  background-color: $colorWhite;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+
+.team__title {
+  font-weight: $font-thick;
+  font-size: $font-m;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $socialsColor;
+  margin: 30px 0 10px 0;
+}
+.team__text {
+  font-size: $font-m;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $fontColorSecondary;
+  margin: 0 0 16px 0;
+}
+.team__icon-list {
+  @include flex-center;
+  list-style: none;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: $flex-gap;
+}
+.team__icon-link {
+  @include flex-center;
+  justify-content: center;
+  width: $font-xxl;
+  height: $font-xxl;
+  border-radius: 50%;
+  fill: $socialIcon;
+  transition: background-color $transition-delay, fill $transition-delay,
+    border-radius $transition-delay;
+  &:hover,
+  &:focus {
+    background-color: $selectionColor;
+    fill: $colorWhite;
+    border-radius: 50%;
+  }
+}
