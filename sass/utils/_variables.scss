@@ -58,13 +58,6 @@ $transition-delay: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 @mixin button {
-  width: 200px;
-  height: 50px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-@mixin button {
   cursor: pointer;
   font-weight: $font-bold;
   font-size: $font-m;
@@ -72,24 +65,4 @@ $transition-delay: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   letter-spacing: 0.06em;
   border-radius: 4px;
   border-style: none;
-  color: var(--colorWhite);
-  background-color: var(--selectionColor);
-}
-
-@mixin logo {
-  font-family: $logo-font;
-  font-size: $font-l;
-  font-weight: $font-bold;
-  line-height: $line-height-big;
-  text-decoration: $none;
-}
-@mixin modal-close-btn {
-  content: '';
-  width: 15px;
-  height: 2px;
-  background-color: $modal-icon;
-  fill: $modal-icon;
-  position: absolute;
-  left: 25%;
-  transform: rotate(45deg);
 }
