@@ -7,12 +7,12 @@
   margin-right: 93px;
 }
 .header__logo-blue {
-  color: var(--selectionColor);
+  color: $selectionColor;
 }
 .header__logo-black {
-  color: var(--fontColorMain);
+  color: $fontColorMain;
 }
-
+// tu skończyłem !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .nav__list {
   display: flex;
   gap: 46px;
