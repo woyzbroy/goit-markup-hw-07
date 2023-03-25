@@ -66,3 +66,11 @@ $transition-delay: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   border-radius: 4px;
   border-style: none;
 }
+@mixin logo {
+  font-family: $logo-font;
+  font-size: $font-l;
+  font-weight: $font-bold;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
