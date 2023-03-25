@@ -1,0 +1,40 @@
+.features {
+  padding: $section-padding;
+}
+.features__svg__block__list {
+  @include flex-center;
+  list-style: none;
+  gap: $flex-gap;
+  margin-bottom: $medium;
+}
+.features__svg__block__item {
+  @include flex-center;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  background-color: $portfolioButton;
+  border-radius: $itemBorderRadius;
+}
+.features__list {
+  @include flex-center;
+  list-style: none;
+  gap: $flex-gap;
+}
+.features__title {
+  display: block;
+  font-weight: $font-bold;
+  font-size: $font-default;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $socialsColor;
+  margin: 0 0 10px 0;
+}
+.features__text {
+  display: block;
+  font-size: $font-default;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $fontColorSecondary;
+  //   margin: 0;
+}
