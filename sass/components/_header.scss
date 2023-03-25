@@ -27,46 +27,45 @@
     padding: $header-padding;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
-.nav__list .nav__link:hover,
-.nav__list .nav__link:focus {
-  color: var(--selectionColor);
-}
-.nav__list .nav__link--current {
-  color: var(--selectionColor);
-}
-.nav__list .nav__link--current::after {
-  content: '';
-  display: block;
-  position: relative;
-  top: 32px;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
+  .nav__link:hover,
+  .nav__link:focus {
+    color: $selectionColor;
+  }
+  .nav__link--current {
+    color: $selectionColor;
+  }
+  .nav__link--current::after {
+    content: '';
+    display: block;
+    position: relative;
+    top: 32px;
+    height: 4px;
+    background: $selectionColor;
+    border-radius: 2px;
+  }
 }
 .header__list {
-  display: flex;
-  gap: 30px;
+  @include flex-center;
+  gap: $flex-gap;
   margin-left: auto;
   list-style: none;
-}
-.header__list .header__link:hover,
-.header__list .header__link:focus {
-  color: var(--selectionColor);
-  fill: var(--selectionColor);
-}
-.header__list .header__link {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--fontColorSecondary);
-  fill: var(--fontColorSecondary);
-  margin: 32px 0;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .header__link:hover,
+  .header__link:focus {
+    color: $selectionColor;
+    fill: $selectionColor;
+  }
+  .header__link {
+    @include flex-center;
+    font-size: $font-default;
+    font-weight: $font-thick;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $fontColorSecondary;
+    fill: $fontColorSecondary;
+    margin: 32px 0;
+    transition: color $transition-delay, fill $transition-delay;
+  }
 }
 .header__icon {
   margin-right: 10px;
