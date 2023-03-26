@@ -42,7 +42,7 @@
   top: 32px;
   height: 4px;
   background: $selectionColor;
-  border-radius: 2px;
+  border-radius: $checkbox-border-radius;
 }
 
 .header__list {

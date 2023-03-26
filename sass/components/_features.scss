@@ -13,7 +13,7 @@
   height: 120px;
   justify-content: center;
   background-color: $portfolioButton;
-  border-radius: $itemBorderRadius;
+  border-radius: $item-border-radius;
 }
 .features__list {
   @include flex-center;
