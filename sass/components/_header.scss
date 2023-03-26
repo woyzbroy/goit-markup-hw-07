@@ -70,3 +70,6 @@
 .header__icon {
   margin-right: $xsmall;
 }
+.header--border {
+  @include item-border(red);
+}
