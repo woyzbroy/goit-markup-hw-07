@@ -71,5 +71,5 @@
   margin-right: $xsmall;
 }
 .header--border {
-  @include item-border(red);
+  border-bottom: 1px solid $backgroundBorderBottom;
 }
