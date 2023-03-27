@@ -1,13 +1,13 @@
 .features {
   padding: $section-padding;
 }
-.features__svg__block__list {
+.features__svg-list {
   @include flex-center;
   list-style: none;
   gap: $flex-gap;
   margin-bottom: $medium;
 }
-.features__svg__block__item {
+.features__svg-item {
   @include flex-center;
   width: 270px;
   height: 120px;
