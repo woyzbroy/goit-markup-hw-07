@@ -33,18 +33,17 @@
   }
   .nav__link--current {
     color: $selectionColor;
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      top: 32px;
+      height: 4px;
+      background: $selectionColor;
+      border-radius: $checkbox-border-radius;
+    }
   }
 }
-.nav__link--current::after {
-  content: '';
-  display: block;
-  position: relative;
-  top: 32px;
-  height: 4px;
-  background: $selectionColor;
-  border-radius: $checkbox-border-radius;
-}
-
 .header__list {
   @include flex-center;
   gap: $flex-gap;
